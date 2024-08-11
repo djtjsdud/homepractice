@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol,dl{
+    list-style: none;
+}
+#tab{
+    width: 50vw;
+    margin: 5vh auto 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+#tab > li{
+    width: 50%;
+}
+#tab > li input{
+    display: none;
+}
+#tab > li label{
+    display: block;
+    background-color: #333;
+    color: #fff;
+    line-height: 50px;
+}
+#tab > li #ab-box{
+    background-color: #ccc;
+    color: black;
+    height: 300px;
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+}
+#tab > li input:checked ~ #ab-box{
+    z-index: 99;
+}
