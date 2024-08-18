@@ -1,0 +1,18 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.navbar-nav a:not(.nav-link){
+    color: #ff0000;
+    text-decoration: none;
+
+}
+#textinput:focus{
+    outline: double #ff0000;
+    border: 0;
+    background-color: #999;
+    color: #fff;
+}

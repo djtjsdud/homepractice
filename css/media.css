@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-size: 14px;
+}
+.list{
+    width: 800px;
+
+    margin: 0 auto;
+    flex-wrap: wrap;
+    display: flex;
+}
+.list li{
+    width: 25%;
+    height: 200px;
+    margin-bottom: 10px;
+    background-color: blue;
+    font-size: 2rem;
+    color: #fff;
+}
+.list li:nth-child(even){
+    background-color: blueviolet;
+}
+@media screen and (max-width : 991px){
+    .list li{
+        width: 25%;
+    }
+}
+@media screen and (max-width : 767px){
+    .list li{
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width : 575px){
+    .list li{
+        width: 100%;
+    }
+    .list{
+        display: block;
+    }
+}
